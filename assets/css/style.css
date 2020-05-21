@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-- : #172E55;
+    --secondary-color-- : #ED1461;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+/* Utility Class */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--primary-color--);
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.pt{
+    padding-top: 70px;
+}
+
+.py {
+    padding: 70px 0;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading p{
+    padding-top: 60px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary-color--);
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+
+/* NAVBER STYLE */
+#navbar {
+    background: var(--secondary-color--);
+    padding: 20px 0;
+    color: #fff;
+}
+
+#navbar .nav,
+#navbar .nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .nav div h1{
+    margin-left: 10px;
+}
+
+#navbar .nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .nav ul li{
+   padding: 0 30px;
+}
+
+#navbar .nav ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+/* SHOWCASE STYPE */
+#showcase {
+    background: url(../images/banner.png) no-repeat center center/cover;
+    min-height: 600px;
+}
+
+#showcase .showcase-content{
+   padding-top: 150px;
+}
+
+#showcase .showcase-content h1{
+   font-size: 48px;
+   color: var(--primary-color--);
+   text-transform: uppercase;
+   padding-bottom: 40px;
+}
+
+#showcase .showcase-content input{
+    padding: 13px;
+    width: 400px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+#showcase .showcase-content .src{
+    background: var(--secondary-color--);
+}
+
+#showcase .showcase-content .btn-group button{
+    background: transparent;
+    border: 1px solid var(--primary-color--);
+    border-radius: 5px;
+    color: var(--primary-color--);
+    padding: 7px 10px;
+    margin-top: 30px;
+}
+
+/* FRATURED MEMBERS */
+#featured .featured-content .card-group{
+    display: flex;
+    justify-content: space-between;
+}
+#featured .featured-content .card-group .card{
+    padding: 30px;
+    background: var(--primary-color--);
+    border-radius: 5px;
+    color: #fff;
+    width: 570px;
+}
+
+#featured .featured-content .card-group .card .card-heading{
+    float: right;
+    font-size: 25px;
+    color: var(--secondary-color--);
+}
+
+#featured .featured-content .card-group .card .card-body .body-top{
+    display: flex;
+    align-items: center;
+}
+
+#featured .card-group .card .card-body .body-top .info{
+    margin-left: 30px;
+}
+
+#featured .card-group .card .card-body .body-top .info h5{
+    font-size: 18px;
+}
+
+#featured .card-group .card .card-body .body-top .info p{
+    color: var(--secondary-color--);
+}
+
+#featured .card-group .card .card-body .promotion{
+    display: flex;
+    justify-content: space-around;
+    background: var(--secondary-color--);
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#featured .card-group .card .card-body .promotion div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured .featured-content .card-group .card a{
+    float: right;
+    color: var(--secondary-color--);
+}
+
+/* WORKS SECTION */
+#works .work-content .work-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#works .work-content .work-group .W-img{
+    margin-bottom: 150px;
+}
+
+#works .work-content .work-group h4{
+    color: var(--primary-color--);
+}
+
+/* Create a stunning Profile */
+#stunningProfile {
+    background: url(../images/banner2.png) no-repeat center center/cover;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+#stunningProfile .stunning-content{
+    width: 50%;
+}
+
+#stunningProfile .stunning-content h2{
+   color: #fff;
+}
+
+#stunningProfile .stunning-content .pra{
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+
+#stunningProfile .stunning-content .pro-btn{
+   background: #fff;
+   color: var(--secondary-color--);
+   margin-left: 20px;
+}
+
+/* Most recent  */
+#recent{
+    background: #ECEFF5;
+}
+
+#recent .recent-content .recent-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#recent .recent-content .recent-list ul li{
+    padding: 10px 20px;
+}
+
+#recent .recent-content .recent-list ul li a{
+    color: var(--primary-color--);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#recent .recent-content .card-group{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+#recent .recent-content .card-group .card{
+    background: #fff;
+    border-radius: 5px;
+    width: 370px;
+}
+
+#recent .recent-content .card-group .card .card-body{
+   padding: 30px;
+}
+
+#recent .recent-content .card-group .card .card-heading{
+    float: right;
+    font-size: 20px;
+    color: var(--secondary-color--);
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+#recent .recent-content .card-group .card .card-body .body-top{
+    display: flex;
+    align-items: flex-end;
+}
+
+#recent .recent-content .card-group .card .card-body .info{
+    margin-left: 20px;
+}
+
+#recent .recent-content .card-group .card .card-body img{
+    width: 100px;
+}
+
+#recent .recent-content .card-group .card .card-body p:first-of-type{
+    color: var(--primary-color--);
+    font-weight: bold;
+}
+
+#recent .recent-content .card-group .card .card-body .body-top .info h5{
+    font-size: 18px;
+    color: var(--secondary-color--);
+}
+
+#recent .recent-content .card-group .card a{
+    color: var(--secondary-color--);
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+/* What’s your specialty? */
+#specialty .list-group {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#specialty .list-group .list li{
+    background: transparent;
+    border: 1px solid#c8cdd7;
+    border-radius: 5px;
+    color: var(--primary-color--);
+    padding: 7px 10px;
+    margin: 5px;
+    width: 130px;
+}
+
+/* Creatives Minds */
+#creativeMinds {
+    background: url(../images/banner3.png) no-repeat center center/cover;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+#creativeMinds h2 {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+#creativeMinds button {
+    background: var(--secondary-color--);
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
+/* Share with friends  */
+#shareFriend div{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Thanks to our advertisers */
+#advertisers {
+    background: #F4F5F8;
+}
+
+#advertisers .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#advertisers .row .col{
+    background: #fff;
+    height: 140px;
+    width: 210px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#advertisers .row .col:last-of-type{
+    text-align: center;
+    color: #000 !important;
+}
+
+#advertisers .row .col:last-of-type span{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--primary-color--);
+}
+
+#advertisers .row .col:last-of-type i{
+    background: var(--secondary-color--);
+    padding: 4px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color--);
+    text-align: center;
+    color: #fff;
+}
+
+.footer .footer-top {
+    padding: 50px 0;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social a{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #d1d5dd;
+    margin: 10px;
+    padding: 3px;
+}
+
+.footer .footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid#2f3d4d;
+}
