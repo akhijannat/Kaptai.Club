@@ -68,7 +68,13 @@ h4 {
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
+    /* transition: all .90s ease-in-out; */
 }
+
+.btn-primary:hover {
+    color: var(--secondary-color--);
+}
+
 button:focus,
 input:focus{
     outline: none;
@@ -138,6 +144,10 @@ input:focus{
     background: var(--secondary-color--);
 }
 
+#showcase .showcase-content .src:hover{
+    background: var(--primary-color--);
+}
+
 #showcase .showcase-content .btn-group button{
     background: transparent;
     border: 1px solid var(--primary-color--);
@@ -145,6 +155,11 @@ input:focus{
     color: var(--primary-color--);
     padding: 7px 10px;
     margin-top: 30px;
+}
+
+#showcase .showcase-content .btn-group button:hover{
+    background: var(--primary-color--);
+    color: #fff;
 }
 
 /* FRATURED MEMBERS */
@@ -204,6 +219,11 @@ input:focus{
     color: var(--secondary-color--);
 }
 
+#featured .featured-content .card-group .card a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
 /* WORKS SECTION */
 #works .work-content .work-group{
     display: flex;
@@ -249,6 +269,10 @@ input:focus{
    margin-left: 20px;
 }
 
+#stunningProfile .stunning-content .pro-btn:hover{
+   color: var(--primary-color--);
+}
+
 /* Most recent  */
 #recent{
     background: #ECEFF5;
@@ -269,6 +293,10 @@ input:focus{
     color: var(--primary-color--);
     text-transform: uppercase;
     font-weight: bold;
+}
+
+#recent .recent-content .recent-list ul li a:hover{
+    color: var(--secondary-color--);
 }
 
 #recent .recent-content .card-group{
@@ -324,6 +352,11 @@ input:focus{
     padding-top: 30px;
 }
 
+#recent .recent-content .card-group .card a:hover{
+    color: var(--primary-color--);
+    text-decoration: underline;
+}
+
 /* What’s your specialty? */
 #specialty .list-group {
     text-align: center;
@@ -338,6 +371,10 @@ input:focus{
     padding: 7px 10px;
     margin: 5px;
     width: 130px;
+}
+
+#specialty .list-group .list li:hover {
+   border: 1px solid var(--secondary-color--);
 }
 
 /* Creatives Minds */
@@ -361,6 +398,10 @@ input:focus{
     background: var(--secondary-color--);
     padding: 10px 50px;
     margin-top: 50px;
+}
+
+#creativeMinds button:hover {
+    color: var(--primary-color--);
 }
 
 /* Share with friends  */
@@ -435,7 +476,20 @@ input:focus{
     padding: 3px;
 }
 
+.footer .social a:hover {
+    color: var(--secondary-color--);
+}
+
 .footer .footer-bottom {
     padding: 30px 0;
     border-top: 1px solid#2f3d4d;
+}
+
+
+
+
+
+
+@media (max-width:1200) {
+    
 }
